@@ -57,36 +57,36 @@
 "!="               return 'diferente';
 
 //simbolos
-"{"              return 'corchetea';     
-"}"              return 'corchetec';
-"("              return 'parenta';     
-")"              return 'parentc';
+"("              return 'corchetea';     
+")"              return 'corchetec';
+"{"              return 'parenta';     
+"}"              return 'parentc';
 ","              return 'coma';
 "."              return 'punto';
 "="              return 'igual';
-";"              return 'puntocoma';
+";;"              return 'puntocoma';
 
 //logicos
-"!"              return 'not';
-"&&"              return 'and';
-"||"              return 'or';
+"NOT"              return 'not';
+"Y"              return 'and';
+"O"              return 'or';
 
 //Reservadas
-"null"                  return 'resnull';
-"integer"               return 'resinteger';
-"double"                return 'resdouble';
-"char"                  return 'reschar';
-"string"                return 'resstring';
-"true"                  return 'restrue';
-"false"                 return 'resfalse';
-"if"                    return 'resif';
-"else"                  return 'reselse';
-"print"                 return 'resprint';
-"for"                   return 'resfor';
-"while"                 return 'reswhile';
-"do"                    return 'resdo';
-"boolean"               return 'resboolean';
-"void"                  return 'resvoid';
+"soledad"                  return 'resnull';
+"numeroEntero"               return 'resinteger';
+"numeroDecimal"                return 'resdouble';
+"letra"                  return 'reschar';
+"cadenaC"                return 'resstring';
+"afirmacion"                  return 'restrue';
+"negacion"                 return 'resfalse';
+"sisas"                    return 'resif';
+"nosisas"                  return 'reselse';
+"imprimir"                 return 'resprint';
+"buclePara"                   return 'resfor';
+"bucleMientra"                 return 'reswhile';
+"hacerEsto"                    return 'resdo';
+"logico"               return 'resboolean';
+"vacio"                  return 'resvoid';
 
 /* Espacios en blanco */
 [ \r\t]+                  {}
