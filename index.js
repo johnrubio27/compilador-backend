@@ -9,7 +9,7 @@ const port = process.env.PORT || 5000
 app.use(bodyparser.json({ limit: '50mb', extended: true }));
 app.use(bodyparser.urlencoded({ limit: '50mb', extended: true }));
 //app.use(bodyparser.urlencoded({ extended: false }))
-app.use(cors({ origin: 'https://compilador-unimagdalena.netlify.app/' }))
+app.use(cors())
 
 app.get('/welcome', (req,res) =>{
     res.send({message: 'Bienvenidos'});
