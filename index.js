@@ -3,6 +3,8 @@ const bodyparser = require('body-parser')
 const cors = require('cors');
 var app = express();
 
+const port = process.env.PORT || 5000
+
 //app.use(bodyparser.json())
 app.use(bodyparser.json({ limit: '50mb', extended: true }));
 app.use(bodyparser.urlencoded({ limit: '50mb', extended: true }));
@@ -25,6 +27,6 @@ app.post('/compile', (req, res) => {
 
 })
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('on port 3000')
 })
