@@ -64,7 +64,7 @@
 ","              return 'coma';
 "."              return 'punto';
 "="              return 'igual';
-";;"              return 'puntocoma';
+";"              return 'puntocoma';
 
 //logicos
 "NOT"              return 'not';
