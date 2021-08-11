@@ -170,7 +170,7 @@ INSTRUCTIONS
 ;
 
 INSTRUCTION
-    : DECLARATION SEMICOLON {if($1 != null){$$ = $1}}
+    : DECLARATION SEMICOLON {if(1$ != null){$$ = $1}}
     | ASSIGNMENT SEMICOLON {$$ = $1;}
     | FUNCTION {symbolt.addFunction($1);}
     | IF {$$ = $1;}
