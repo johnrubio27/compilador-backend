@@ -9,6 +9,10 @@ app.use(bodyparser.urlencoded({ limit: '50mb', extended: true }));
 //app.use(bodyparser.urlencoded({ extended: false }))
 app.use(cors({ origin: 'http://localhost:4200' }))
 
+app.get('/welcome', (req,res) =>{
+    res.send({message: 'Bienvenidos'});
+});
+
 app.post('/compile', (req, res) => {
     const parser = require('./grammar');
     try {
